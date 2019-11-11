@@ -7,7 +7,6 @@ jdk: openjdk10
 
 install:
   - sudo apt-get install -qq dotnet-sdk-2.0.0
-  - bash ./tools/travis-install-dependencies.sh
 
 script:
   - git fetch --unshallow || true
