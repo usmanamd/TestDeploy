@@ -20,7 +20,7 @@ namespace DemoWebApp.Controllers
 
         public IActionResult Index()
         {           
-            return View();
+            return Vie();
         }
 
         public IActionResult Privacy()
