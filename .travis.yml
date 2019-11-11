@@ -1,5 +1,15 @@
+sudo: required
+solution: PoC.SharpDiff.sln
 language: csharp
-solution: DemoWebApp.sln
+dotnet: 3.0.100
+mono: none
+jdk: openjdk10
+
+install:
+  - sudo apt-get install -qq dotnet-sdk-2.0.0
+  - bash ./tools/travis-install-dependencies.sh
+
 script:
-  - msbuild /p:Configuration=Release DemoWebApp.sln
+  - git fetch --unshallow || true
+  - bash ./tools/travis-build.sh
   
