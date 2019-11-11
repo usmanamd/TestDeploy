@@ -20,7 +20,7 @@ namespace DemoWebApp.Controllers
 
         public IActionResult Index()
         {
-            _logger.LogError("new error", null);
+            //_logger.LogError("new error", null);
             return View();
         }
 
